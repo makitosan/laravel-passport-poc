@@ -6,10 +6,11 @@ use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Yadahan\AuthenticationLog\AuthenticationLogable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens,Notifiable;
+    use HasApiTokens,Notifiable,AuthenticationLogable;
 
     /**
      * The attributes that are mass assignable.
