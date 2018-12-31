@@ -6,7 +6,15 @@ Laravel and its Passport is customized as the followings
 * api path is under the `/api/v1`, see `routes/api.php` and `app/Providers/AuthServiceProvider.php`
 * authentication log is stored in DB which is enabled by [laravel-authentication-log](https://github.com/yadahan/laravel-authentication-log)
     * to integrate laravel/passport and laravel-authentication-log LogSuccessfulAccessTokenCreated listener works
+* some roles are defined as laravel-permission works
+    * teacher / student / admin
     
+## Libraries
+
+* laravel/passport
+* yadahan/laravel-authentication-log https://github.com/yadahan/laravel-authentication-log
+* spatie/laravel-permission https://github.com/spatie/laravel-permission
+
 ## Create User
 
 ```
